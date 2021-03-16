@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+    <title> Hello </title>
+    <style>
+        ul > li {
+            color:blue;
+        }
+
+        a{
+            color:blue;
+        }
+        a[href="https://facebook.com"] {
+            color: red;
+        }
+
+        button{
+            width: 200px;
+            color: green;
+
+        }
+
+        button:hover{
+            background-color: honeydew;
+        }
+
+        @media (min-width: 600px){
+        body{
+            background-color: red;
+        }
+        }
+
+        @media (max-width:599px){
+            body
+            { background-color: pink;}
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #container > div{
+            background-color: plum;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <ol>
+        <li> item 1 </li>
+        <li> item 2 </li>
+            <ul>
+                <li>a</li>
+                <li>b</li>
+            </ul>
+        <li> item 3 </li>
+        <li> item 4 </li>
+
+    </ol>
+
+    <ol>
+        <li><a href="https://google.com">Google</a></li>
+        <li><a href="https://facebook.com">Facebook</a></li>
+        <li><a href="https://amazon.com">Amazon</a></li>
+    </ol>
+
+    <button>Click me</button>
+
+    <div id="container">
+        <div>this is some sample text 1</div>
+        <div>this is some sample text 1</div>
+        <div>this is some sample text 2</div>
+        <div>this is some sample text 3</div>
+        <div>this is some sample text 4</div>
+        <div>this is some sample text 5</div>
+    </div>
+</body>
+
+
+
+
+</html>
